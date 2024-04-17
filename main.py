@@ -42,7 +42,7 @@ def create_combinations():
         for combination in combinations:
             chars = ''.join(chr(c) for c in combination)
             if(isItRight(chars)):
-                print(f"Yeeeeeeeees the password is: ({chars}):")
+                print(f"Yeeeeeeeees the password is: ({chars})")
                 sys.exit()
         print()
 
@@ -67,7 +67,6 @@ def isItRight(chars):
     """
     print(f"Checking: ({chars})")
     wt = get_active_window_title()
-    print(wt)
     
     if "Enter password" != wt:
         if "Error" == wt:
